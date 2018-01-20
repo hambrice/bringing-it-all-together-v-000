@@ -49,5 +49,6 @@ class Dog
     if !dog.empty?
       data = dog[0]
       dog = Dog.new(dog[1], dog[2], dog[0])
+    else
     
 end
