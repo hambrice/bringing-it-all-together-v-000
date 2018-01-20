@@ -4,7 +4,7 @@ class Dog
   attr_accessor :name, :breed
   attr_reader :id
   
-  def initialize(name, breed, id = nil)
+  def initialize(name:, breed:, id = nil)
     @id = id
     @name = name 
     @breed = breed
@@ -30,7 +30,7 @@ class Dog
     self
   end
   
-  def self.create(name:, breed:)
+  def self.create(name, breed)
     #binding.pry
     dog = Dog.new(name, breed)
     dog.save
