@@ -48,7 +48,7 @@ class Dog
     dog = DB[:conn].execute(sql,name, breed)
     if !dog.empty?
       data = dog[0]
-      binding.pry
+      #binding.pry
       dog = self.new(name: data[1], breed: data[2], id: data[0])
     else
       dog = self.create(name: name, breed: breed)
