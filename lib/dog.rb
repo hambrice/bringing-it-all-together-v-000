@@ -50,5 +50,6 @@ class Dog
       data = dog[0]
       dog = Dog.new(dog[1], dog[2], dog[0])
     else
+      dog = Dog.create(name: name, breed: breed)
     
 end
