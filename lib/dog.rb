@@ -66,4 +66,7 @@ class Dog
     data = DB[:conn].execute(sql, name)[0]
     self.new(name: data[1], breed: data[2], id: data[0])
   end
+  
+  def update
+    sql = "ALTER "
 end
