@@ -54,4 +54,6 @@ class Dog
     end
     dog
   end
+  
+  dog self.new_from_db
 end
