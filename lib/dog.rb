@@ -47,6 +47,7 @@ class Dog
     sql = "SELECT * FROM dogs WHERE name = ? AND album = ?"
     dog = DB[:conn].execute(sql, name, breed)
     if !dog.empty?
+      data = dog[0]
       
     
 end
