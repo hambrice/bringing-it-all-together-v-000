@@ -52,7 +52,6 @@ class Dog
       dog = self.new(name: data[1], breed: data[2], id: data[0])
     else
       dog = self.create(name: name, breed: breed)
-      dog.save
     end
     dog
   end
